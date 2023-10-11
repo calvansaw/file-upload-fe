@@ -1,7 +1,7 @@
 export const DOMAIN_URL =
   "https://authcs.auth.ap-southeast-1.amazoncognito.com";
 export const CLIENT_ID = "5tkqkshj5v16aeh665p03ji77a";
-export const REDIRECT_URI = "https://d3uj6jfwk8cmzv.cloudfront.net";
+export const REDIRECT_URI = "https://d3cuqnef25fhqb.cloudfront.net";
 
 export const AUTHORIZE_URL = `${DOMAIN_URL}/oauth2/authorize?client_id=${CLIENT_ID}&response_type=code&scope=resourceidentifier/read%20resourceidentifier/write&redirect_uri=${REDIRECT_URI}`;
 export const TOKEN_URL = `${DOMAIN_URL}/oauth2/token`;
