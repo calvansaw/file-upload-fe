@@ -3,22 +3,39 @@ import App from "./App";
 import Login from "./components/Login";
 import PublicImage from "./components/PublicImage";
 import Image from "./components/Image";
+import Layout from "./components/Layout";
 
 export const routes = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <Layout>
+        <App />
+      </Layout>
+    ),
   },
   {
     path: "/login",
-    element: <Login />,
+    element: (
+      <Layout>
+        <Login />
+      </Layout>
+    ),
   },
   {
     path: "/public",
-    element: <PublicImage />,
+    element: (
+      <Layout>
+        <PublicImage />
+      </Layout>
+    ),
   },
   {
     path: "/files",
-    element: <Image />,
+    element: (
+      <Layout>
+        <Image />
+      </Layout>
+    ),
   },
 ]);
